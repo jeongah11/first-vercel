@@ -78,7 +78,7 @@
         <div class="box-chat">
             <h1>AI 채팅 (Groq)</h1>
             <div id="ans">
-    
+
             </div>
         </div>
         <div class="box-prompt">
@@ -90,7 +90,7 @@
     <script>
         document.querySelector("#btn").addEventListener("click", () => {
             const prompt = document.querySelector("#q").value
-            
+
             document.querySelector("#ans").innerHTML += `<p class="prom">${prompt}</p>`
             fetch('/api/chat', {
                 method: "POST",
